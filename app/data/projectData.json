@@ -11,6 +11,12 @@
         "web": "https://guniism.github.io/Forgot",
         "repo": "https://github.com/Guniism//Forgot"
     },
+    "FarmerJohn": {
+        "name": "FarmerJohn",
+        "desc": "A 2D pixel-style mining game built in Java, featuring fully hand-drawn game assets.",
+        "web": "https://github.com/guniism/MinerJohn",
+        "repo": "https://github.com/guniism/MinerJohn"
+    },
     "TruthTableGenerator":{
         "name": "Truth Table Generator",
         "desc": "A web-based truth table generator using the Shunting Yard algorithm",
