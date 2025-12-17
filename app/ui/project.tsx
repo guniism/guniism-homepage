@@ -2,8 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import projectData from "@/app/data/projectData.json";
-import { useState } from "react";
-
 // const projectData = require("@/app/data/projectData.json");
 
 interface Project {
