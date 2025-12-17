@@ -5,6 +5,7 @@ import About from "./ui/about";
 import Project from "./ui/project";
 import Footer from "./ui/footer";
 import { useState } from "react";
+import TextMorph from "./components/TextMorph";
 
 export default function Home() {
   const myName = [
@@ -38,6 +39,9 @@ export default function Home() {
           <p className="text-2xl">Hello I&apos;m</p>
           <h2 className="font-bold text-4xl md:text-5xl">{name}</h2>
           <p className="text-3xl">A student</p>
+          {/* <div>
+            <TextMorph />
+          </div> */}
         </div>
       </div>
       <About />

@@ -25,7 +25,8 @@ export default function About() {
             <br />
             Chulalongkorn University &nbsp;<em>August 2024 - Present</em>
             <br />
-            GPAX 3.92
+            GPAX 3.70
+            <br />
             <br />
             <b>Science - Health</b>
             <br />
