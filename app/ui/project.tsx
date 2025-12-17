@@ -18,7 +18,7 @@ interface ProjectContainerProps {
 }
 
 const ProjectContainer: React.FC<ProjectContainerProps> = ({ id }) => {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
   const { name, desc, web, repo } = projectData[id];
   // const name =  projectData[id].name;
