@@ -5,7 +5,7 @@ import About from "./ui/about";
 import Project from "./ui/project";
 import Footer from "./ui/footer";
 import { useState } from "react";
-import TextMorph from "./components/TextMorph";
+// import TextMorph from "./components/TextMorph";
 
 export default function Home() {
   const myName = [
