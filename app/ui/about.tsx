@@ -36,7 +36,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      {/* <div className="p-12"></div> */}
+      <div className="p-12"></div>
     </div>
   );
 }

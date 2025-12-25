@@ -78,7 +78,7 @@ export default function Project() {
     >
       <Telecaster />
 
-      <div className="p-5 -mt-5">
+      <div className="p-5 mt-5">
         <div className="max-w-3xl w-full h-full">
           <h2 className=" font-semibold text-4xl ">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 my-5">
