@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import projectData from "@/app/data/projectData.json";
+import Telecaster from "../components/telecaster";
 // const projectData = require("@/app/data/projectData.json");
 
 interface Project {
@@ -73,14 +74,21 @@ export default function Project() {
   return (
     <div
       id="project"
-      className="h-auto w-full bg-base flex flex-col items-center p-5"
+      className="h-auto w-full bg-base flex flex-col items-center"
     >
-      <div className="max-w-3xl w-full h-full">
-        <h2 className=" font-semibold text-4xl ">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 my-5">
-          {Object.keys(projectData).map((key) => (
-            <ProjectContainer key={key} id={key as keyof typeof projectData} />
-          ))}
+      <Telecaster />
+
+      <div className="p-5 -mt-5">
+        <div className="max-w-3xl w-full h-full">
+          <h2 className=" font-semibold text-4xl ">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7 my-5">
+            {Object.keys(projectData).map((key) => (
+              <ProjectContainer
+                key={key}
+                id={key as keyof typeof projectData}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

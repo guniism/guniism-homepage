@@ -44,8 +44,11 @@ export default function Home() {
           </div> */}
         </div>
       </div>
+
       <About />
+      {/* <Telecaster /> */}
       <Project />
+
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div id="about" className="h-auto w-full  flex flex-col items-center p-5">
+    <div id="about" className="h-auto w-full flex flex-col items-center p-5">
       <div className="max-w-2xl w-full h-full  flex flex-col bg-con rounded-lg p-5 border border-bd">
         <h2 className=" font-semibold text-4xl mx-auto">About me</h2>
         <div className="flex flex-col">
@@ -36,7 +36,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="p-12"></div>
+      {/* <div className="p-12"></div> */}
     </div>
   );
 }
