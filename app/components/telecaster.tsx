@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 
 export default function Telecaster() {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -44,14 +45,19 @@ export default function Telecaster() {
     // pointLight.position.set(0, 2, 5);
     // scene.add(pointLight);
 
-    const loader = new GLTFLoader();
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath("/draco/");
+
+    const gltfLoader = new GLTFLoader();
+    gltfLoader.setDRACOLoader(dracoLoader);
+
     const pivot = new THREE.Group();
     const modelGroup = new THREE.Group();
     scene.add(modelGroup);
     modelGroup.rotation.set(0, 0.5, -1);
     modelGroup.position.set(0.025, 0.05, 0);
 
-    loader.load("/model3d/full-tele9.glb", (gltf) => {
+    gltfLoader.load("/model3d/full-tele11.glb", (gltf) => {
       const model = gltf.scene;
       model.rotation.set(Math.PI / 2, 0, 0);
       pivot.rotation.y = THREE.MathUtils.degToRad(-45);
