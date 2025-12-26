@@ -21,6 +21,7 @@ export default function Telecaster() {
       1000
     );
     camera.position.z = 0.525;
+    // camera.position.z = 0.75;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(mount.clientWidth, mount.clientHeight);
@@ -57,7 +58,7 @@ export default function Telecaster() {
     modelGroup.rotation.set(0, 0.5, -1);
     modelGroup.position.set(0.025, 0.05, 0);
 
-    gltfLoader.load("/model3d/full-tele12.glb", (gltf) => {
+    gltfLoader.load("/model3d/full-tele13.glb", (gltf) => {
       const model = gltf.scene;
       model.rotation.set(Math.PI / 2, 0, 0);
       pivot.rotation.y = THREE.MathUtils.degToRad(-45);
